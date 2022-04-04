@@ -1,0 +1,148 @@
+:root {
+    --Red: hsl(0, 78%, 62%);
+    --Cyan: hsl(180, 62%, 55%);
+    --Orange: hsl(34, 97%, 64%);
+    --Blue: hsl(212, 86%, 64%);
+
+    --Very-Dark-Blue: hsl(234, 12%, 34%);
+    --Grayish-Blue: hsl(229, 6%, 66%);
+    --Very-Light-Gray: hsl(0, 0%, 98%);  
+
+    --font-principal: 'Poppins';
+}
+html {
+    box-sizing: border-box;
+    min-height: 100%;
+    scroll-snap-type: y mandatory;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+p {
+    line-height: 2;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: var(--Very-Light-Gray);
+    min-height: 100%;
+}
+h1 {
+    padding-top: 5rem;
+    color: var(--Very-Dark-Blue);
+    font-size: 1.5rem;
+    font-weight: 200;
+}
+h1 span {
+    font-size: 1.5rem;
+}
+h1, h2, h3,p {
+    text-align: center;
+}
+h2 {
+    color: var(--Very-Dark-Blue);
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+h3 {
+    color: var(--Very-Dark-Blue);
+    font-weight: 600;
+    font-size: 1rem;
+    text-align: left;
+    margin-left: 1rem;
+}
+
+p{
+    color: var(--Grayish-Blue);
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.contenedor {
+    margin: 0 auto;
+    max-width: 375px;
+}
+.header-subtitulo{
+    margin: 0 auto;
+    max-width: 330px;
+}
+.footer {
+    margin: 0 auto;
+    max-width: 250px;
+}
+
+@media (min-width: 800px) {
+
+    .contenedor {
+        margin: 0 auto;
+        max-width: 1440px;
+    }
+    .header-subtitulo{
+        max-width: 580px;
+    }
+
+    .header-subtitulo{
+        margin: 0 auto;
+        max-width: 350px;
+    }
+  
+}
+@media (min-width: 800px) {
+  .tarjetero{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin: 10rem;
+        margin-top: 5rem;
+        margin-bottom: 2rem;
+
+  }
+
+}
+.tarjetero2{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+
+.tarjeta{
+    padding: 1rem;
+    border-radius: 4px;
+    border-top: 4px solid;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    width: 300px;
+    height: 250px;
+    text-align: left;
+    background-color: #FFFF;
+    box-shadow: 0 14px 18px 0 rgba(76, 78, 97, 0.05), 0 16px 20px 0 rgba(	76, 78, 97, 0.09);  
+}
+.tarjeta:last-of-type{
+    margin-bottom: .5rem;
+}
+
+.tarjeta__texto{
+    font-size: .7rem;
+    margin-left: 1rem;
+    text-align: left;
+}
+
+.tarjeta-imagen{
+   padding-left: 12rem;
+}
+
+.tarjeta1{
+    border-color: var(--Cyan);
+    position: relative;
+}
+.tarjeta2{
+    border-color: var(--Red);
+}
+.tarjeta3{
+    border-color: var(--Orange);
+}
+.tarjeta4{
+    border-color: var(--Blue);
+}
